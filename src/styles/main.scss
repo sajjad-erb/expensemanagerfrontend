@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pointer-class{
+    cursor: pointer;
+}
+
+.sidebar{
+    background: #F6F7FF;
+    width: 180%;
+}
+
+.active {
+    color: red;
+}
+
