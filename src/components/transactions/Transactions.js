@@ -69,14 +69,14 @@ const Transactions = () => {
 
 	return (
 		<div>
-			<div className='row align-items-center'>
+			<div className='row'>
 				<div className='col-3'>
 					<Sidebar />
 				</div>
 				<div className='col-8'>
-					<h1 className='text-center'>Transations</h1>
+					<h1 className='text-center text-4xl mt-5'>Transations</h1>
 					<div className='text-center mb-4'><TransactionType /></div>
-					<h4>Transaction History</h4>
+					<h4 className='text-2xl'>Transaction History</h4>
 					{content}
 					<div className='text-center mt-3'>
 						<button onClick={handlePreviousPage} className="btn btn-primary" >

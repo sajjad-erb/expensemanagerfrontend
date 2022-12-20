@@ -28,22 +28,22 @@ const UpdateAccount = ({ account, UpdateAccount }) => {
 					<div className="modal-dialog">
 						<div className="modal-content">
 							<div className="modal-header">
-								<h1 className="modal-title fs-5 text-dark" id="staticBackdropLabel">Update Accounts</h1>
+								<h1 className="modal-title fs-5 sm:text-black" id="staticBackdropLabel">Update Accounts</h1>
 								<button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 							</div>
 							<form onSubmit={update}>
 								<div className="modal-body d-flex flex-column">
 									{/* <input type="hidden" value={account.id} /> */}
-									<input type="text" placeholder='Account Title' className='bg-dark bg-white  p-2 rounded-2'
+									<input type="text" placeholder='Account Title' className='sm:text-black p-2 rounded-2 border-2'
 										onChange={(e) => { setAccount_title(e.target.value) }} value={account_title} />
-									<input type="text" placeholder='Account Number' className='bg-dark mt-2 mb-2 bg-white p-2 rounded-2'
+									<input type="text" placeholder='Account Number' className='bg-dark mt-2 mb-2 p-2 rounded-2'
 										onChange={(e) => { setAccount_no(e.target.value) }} value={account_no} />
-									<input type="text" placeholder='Balance' className='bg-dark bg-white  p-2 rounded-2'
+									<input type="text" placeholder='Balance' className='bg-dark p-2 rounded-2'
 										onChange={(e) => { setBalance(e.target.value) }} value={balance} />
 								</div>
 								<div className="modal-footer">
-									<button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-									<button type="submit" className="btn btn-primary">Update</button>
+									<button type="button" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" data-bs-dismiss="modal">Close</button>
+									<button type="submit" className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Update</button>
 								</div>
 							</form>
 						</div>

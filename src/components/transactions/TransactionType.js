@@ -87,7 +87,6 @@ export const TransactionType = () => {
 	}
 
 
-
 	const handleTransaction = async (e) => {
 		e.preventDefault()
 		await addTransactions({
@@ -103,7 +102,7 @@ export const TransactionType = () => {
 
 	return (
 		<div>
-			<button type="button" className="btn btn-primary text-white border-0 px-2 mt-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+			<button type="button" className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-black py-2 px-4 border border-blue-500 hover:border-transparent rounded mt-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 				Add Transactions
 			</button>
 			<div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -123,7 +122,7 @@ export const TransactionType = () => {
 									{transfer_from_type === 'Account' && <div>
 										<Select options={transferFromIdOption} onChange={handletransferFromIdOption} placeholder='Select Accounts' className='mt-2' />
 									</div>}
-									<button type='submit' className='btn btn-primary mt-2'>Add Expense</button>
+									<button type='submit' className='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mt-3'>Add Expense</button>
 								</div>
 								}
 								{type === 'Income' && <div>
@@ -132,7 +131,7 @@ export const TransactionType = () => {
 									{transfer_to_type === 'Account' && <div>
 										<Select options={transferToIdOption} onChange={handletransferToIdOption} placeholder='Select Accounts' className='mt-2' />
 									</div>}
-									<button type='submit' className='btn btn-primary mt-2'>Add Income</button>
+									<button type='submit' className='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mt-3'>Add Income</button>
 								</div>
 								}
 								{type === 'BankTransfer' && <div>
@@ -145,8 +144,7 @@ export const TransactionType = () => {
 									{transfer_to_type === 'Account' && <div>
 										<Select options={transferToIdOption} onChange={handletransferToIdOption} placeholder='Select Accounts' className='mt-2' />
 									</div>}
-									<button type='submit' className='btn btn-primary mt-2 '>Bank Transfer</button>
-
+									<button type='submit' className='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mt-3'>Bank Transfer</button>
 								</div>}
 							</div>
 						</form>

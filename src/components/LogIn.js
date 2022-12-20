@@ -60,7 +60,7 @@ const LogIn = () => {
               <label>Password</label>
               <input type="password" className="form-control" placeholder="Password"  onChange={(e) => {setPassword(e.target.value)}} />
             </div>
-            <button type="submit" className="btn btn-primary mt-4 w-25 mb-5">Submit</button>
+            <button type="submit" className="text-center text-indigo-400 font-bold rounded py-2 w-2/12 focus:outline-none bg-gray-900 border-2 border-indigo-400">Login</button>
           </form>
           <p onClick={handleSignUp}>Dont have an account? <span className='fw-200 text-decoration-underline text-info pointer-class'>Sign Up</span></p>
         </div>

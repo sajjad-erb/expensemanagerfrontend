@@ -12,7 +12,6 @@ const AddAccount = () => {
 	const [addAccounts, { error }] = useAddAccountsMutation()
 
 
-
 	const submitAccount = async (e) => {
 		e.preventDefault()
 		// if (account_title && account_no && balance) {

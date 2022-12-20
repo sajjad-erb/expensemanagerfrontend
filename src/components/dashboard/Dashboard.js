@@ -9,10 +9,14 @@ Chart.register(CategoryScale);
 const Dashboard = () => {
 
     const { data: transactions } = useGetTransactionsQuery({ refetchOnMountOrArgChange: true })
+    // const transaction = transactions?.map(transaction => {
+		// 		console.log(transaction.category)
+		// 		console.log(transaction.amount)
+		// })
     
     return (
         <div className='h-75 mt-5'>
-          <h3 className='mb-5 text-center'>Expenses Pie Chart</h3>
+          <h3 className='mb-5 text-center text-4xl'>Expenses Pie Chart</h3>
             <Pie data={{
                    labels: transactions?.map((data) => data.category),
                    datasets: [

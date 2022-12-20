@@ -39,8 +39,8 @@ const FetchAccount = () => {
 			<div className='col-3'>
 				<Sidebar />
 			</div>
-			<div className='col-8'>
-				<h1 className='text-center mt-5'>Accounts</h1>
+			<div className='col-9'>
+				<h1 className='text-center mt-5 text-4xl'>Accounts</h1>
 				<div className='row align-items-center '>
 					<AddAccount />
 					{content}

@@ -6,6 +6,7 @@ import Redirect from './components/Redirect';
 import Transactions from './components/transactions/Transactions';
 import FetchAccount from './components/accounts/FetchAccount';
 import Wallet from './components/wallets/Wallet';
+import { GroupExpense } from './components/GroupExpenses/GroupExpense';
 
 
 function App() {
@@ -16,15 +17,14 @@ function App() {
         <Route path="/SignUp" element={<SignUp />} />
         <Route element={<Redirect />}>
           <Route path="/" element={<Home />} />
-        </Route>
-        <Route element={<Redirect />}>
+
           <Route path="/transactions" element={<Transactions />} />
-        </Route>
-        <Route element={<Redirect />}>
+
           <Route path="/accounts" element={<FetchAccount />} />
-        </Route>
-        <Route element={<Redirect />}>
+
           <Route path="/wallet" element={<Wallet />} />
+
+          <Route path="/group-expenses" element={<GroupExpense />} />
         </Route>
       </Routes>
     </Router>
